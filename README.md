@@ -19,13 +19,21 @@ or
 cargo build --target wasm32-wasi --release
 
 ### おまじない
-Cargo.tomlに下記追記。
-[package.metadata.wasm-pack.profile.release]
-wasm-opt = false
+Cargo.tomlに下記追記。  
+[package.metadata.wasm-pack.profile.release]  
+wasm-opt = false  
 
 ### Run
 ❯ wasmtime target/wasm32-wasi/release/hello-k8s.wasm
-Hello, world!
+Hello, world!  
 
 wasmtimeは、インストールすること。
 https://github.com/bytecodealliance/wasmtime
+
+
+
+https://blog.hayashikun.com/entry/2021/01/24/220352
+
+https://github.com/deislabs/krustlet/tree/master/demos/wasi/wasmerciser
+
+https://github.com/hayashikun/krustlet-example/tree/master/prime-api
