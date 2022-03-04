@@ -1,4 +1,4 @@
-# rus-wasm
+# rust-wasm
 RustからWebAssemblyにコンパイルするHello World
 
 ### pre install
